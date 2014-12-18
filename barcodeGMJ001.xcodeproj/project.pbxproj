@@ -15,6 +15,12 @@
 		84086A891A42A9B60000C3C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84086A881A42A9B60000C3C1 /* Images.xcassets */; };
 		84086A8C1A42A9B60000C3C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84086A8A1A42A9B60000C3C1 /* LaunchScreen.xib */; };
 		84086A981A42A9B60000C3C1 /* barcodeGMJ001Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84086A971A42A9B60000C3C1 /* barcodeGMJ001Tests.m */; };
+		84086AA61A42C3A30000C3C1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84086AA41A42C3A30000C3C1 /* BaseViewController.m */; };
+		84086AA71A42C3A30000C3C1 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84086AA51A42C3A30000C3C1 /* BaseViewController.xib */; };
+		84086AA91A42CA110000C3C1 /* square@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84086AA81A42CA110000C3C1 /* square@2x.png */; };
+		84086AAB1A42CA180000C3C1 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84086AAA1A42CA180000C3C1 /* line@2x.png */; };
+		84086AAF1A42D11D0000C3C1 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84086AAD1A42D11D0000C3C1 /* CameraViewController.m */; };
+		84086AB01A42D11D0000C3C1 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84086AAE1A42D11D0000C3C1 /* CameraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,15 @@
 		84086A911A42A9B60000C3C1 /* barcodeGMJ001Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = barcodeGMJ001Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84086A961A42A9B60000C3C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84086A971A42A9B60000C3C1 /* barcodeGMJ001Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barcodeGMJ001Tests.m; sourceTree = "<group>"; };
+		84086AA21A42C0F80000C3C1 /* ACEHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACEHeader.pch; path = ../ACEHeader.pch; sourceTree = "<group>"; };
+		84086AA31A42C3A30000C3C1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		84086AA41A42C3A30000C3C1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		84086AA51A42C3A30000C3C1 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
+		84086AA81A42CA110000C3C1 /* square@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "square@2x.png"; sourceTree = "<group>"; };
+		84086AAA1A42CA180000C3C1 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		84086AAC1A42D11D0000C3C1 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		84086AAD1A42D11D0000C3C1 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		84086AAE1A42D11D0000C3C1 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +98,15 @@
 		84086A771A42A9B60000C3C1 /* barcodeGMJ001 */ = {
 			isa = PBXGroup;
 			children = (
+				84086AB21A42D19E0000C3C1 /* ImageRecource */,
+				84086AB11A42D1410000C3C1 /* BaseRecource */,
 				84086A7C1A42A9B60000C3C1 /* AppDelegate.h */,
 				84086A7D1A42A9B60000C3C1 /* AppDelegate.m */,
 				84086A821A42A9B60000C3C1 /* ViewController.h */,
 				84086A831A42A9B60000C3C1 /* ViewController.m */,
+				84086AAC1A42D11D0000C3C1 /* CameraViewController.h */,
+				84086AAD1A42D11D0000C3C1 /* CameraViewController.m */,
+				84086AAE1A42D11D0000C3C1 /* CameraViewController.xib */,
 				84086A851A42A9B60000C3C1 /* Main.storyboard */,
 				84086A881A42A9B60000C3C1 /* Images.xcassets */,
 				84086A8A1A42A9B60000C3C1 /* LaunchScreen.xib */,
@@ -120,6 +140,26 @@
 				84086A961A42A9B60000C3C1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84086AB11A42D1410000C3C1 /* BaseRecource */ = {
+			isa = PBXGroup;
+			children = (
+				84086AA21A42C0F80000C3C1 /* ACEHeader.pch */,
+				84086AA31A42C3A30000C3C1 /* BaseViewController.h */,
+				84086AA41A42C3A30000C3C1 /* BaseViewController.m */,
+				84086AA51A42C3A30000C3C1 /* BaseViewController.xib */,
+			);
+			name = BaseRecource;
+			sourceTree = "<group>";
+		};
+		84086AB21A42D19E0000C3C1 /* ImageRecource */ = {
+			isa = PBXGroup;
+			children = (
+				84086AAA1A42CA180000C3C1 /* line@2x.png */,
+				84086AA81A42CA110000C3C1 /* square@2x.png */,
+			);
+			name = ImageRecource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,9 +243,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84086AB01A42D11D0000C3C1 /* CameraViewController.xib in Resources */,
 				84086A871A42A9B60000C3C1 /* Main.storyboard in Resources */,
+				84086AA71A42C3A30000C3C1 /* BaseViewController.xib in Resources */,
 				84086A8C1A42A9B60000C3C1 /* LaunchScreen.xib in Resources */,
 				84086A891A42A9B60000C3C1 /* Images.xcassets in Resources */,
+				84086AAB1A42CA180000C3C1 /* line@2x.png in Resources */,
+				84086AA91A42CA110000C3C1 /* square@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84086A7E1A42A9B60000C3C1 /* AppDelegate.m in Sources */,
+				84086AA61A42C3A30000C3C1 /* BaseViewController.m in Sources */,
 				84086A811A42A9B60000C3C1 /* barcodeGMJ001.xcdatamodeld in Sources */,
+				84086AAF1A42D11D0000C3C1 /* CameraViewController.m in Sources */,
 				84086A841A42A9B60000C3C1 /* ViewController.m in Sources */,
 				84086A7B1A42A9B60000C3C1 /* main.m in Sources */,
 			);

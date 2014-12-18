@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ACEHeader.pch"
+#import "CameraViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"viewcontroller";
+    UIButton * scanButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [scanButton setTitle:@"扫描" forState:UIControlStateNormal];
+    scanButton.frame = CGRectMake([[UIScreen mainScreen] applicationFrame].size.width / 9, [[UIScreen mainScreen]applicationFrame].size.height / 8, kX() + 20, kY());
+    [scanButton addTarget:self action:@selector(scanCameraClick) forControlEvents:(UIControlEventTouchUpInside)];
+    [scanButton setBackgroundColor:[UIColor yellowColor]];
+    [self.view addSubview:scanButton];
+}
+
+-(void)scanCameraClick
+{
+    CameraViewController * cameraVC = [[CameraViewController alloc]init];
+    [self presentViewController:cameraVC animated:YES completion:^{
+       // NSLog(@"%@", self.title);
+    }];
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

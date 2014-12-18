@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//  音视频采集输出协议
 @interface ViewController : UIViewController
 
 
