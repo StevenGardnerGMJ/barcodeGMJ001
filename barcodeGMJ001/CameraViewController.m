@@ -85,6 +85,7 @@
     
     
 }
+//  添加相机功能
 -(void)stepIntoCamera
 {
     _device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
