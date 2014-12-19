@@ -100,6 +100,12 @@
     if ([_session canAddOutput:self.output]) {
         [_session addOutput:self.output];
     }
+    //AVMetadataObjectTypeAztecCode  二维码生成器
+    //AVMetadataMachineReadableCodeObjectInternal
+    /*交错式25条码(Interleaved 2 of 5 Code):AVMetadataObjectTypeInterleaved2of5Code*/
+    /**AVMetadataObjectTypeITF14Code:
+                           ITF-14条码符号的放大系数范围为0.625～1.200，条码符号的大小随放大系数的变化而变化。当放大系数为1.000时，ITF-14条码符号各个部分的尺寸如图21所示。条码符号四周应设置保护框。保护框的线宽为4.8mm，线宽不受放大系数的影响。下图为ITF-14条码符号（放大系数为1.000）。*/
+    
 }
 
 
