@@ -10,6 +10,7 @@
 #import "ACEHeader.pch"
 #import <AVFoundation/AVFoundation.h>
 
+
 @interface CameraViewController : UIViewController<AVCaptureMetadataOutputObjectsDelegate>
 {
     int num ;
@@ -22,6 +23,6 @@
 @property(nonatomic, strong)AVCaptureMetadataOutput * output;
 @property(nonatomic, strong)AVCaptureSession *session;
 @property(nonatomic, strong)AVCaptureVideoPreviewLayer * preview;
-@property(nonatomic, strong)UIImageView * lineView;
+//@property(nonatomic, strong)UIImageView * lineView;
 @property(nonatomic, strong)void(^blockResult)(NSString *strResult);
 @end

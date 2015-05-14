@@ -9,6 +9,16 @@
 #import "CameraViewController.h"
 
 @interface CameraViewController ()
+{
+    UIButton    * _cancelBtn;   //取消扫描按钮
+    UILabel     * _alertLabel;  //提示文字
+    UIImageView *_imgView;      //扫描框图片
+    
+//    NSTimer *_timer;            //上下动的计时器
+//    BOOL _upOrdown;             //上下动的标记
+    UIImageView *_lineView;     // 扫面线
+    UIView *_seccessView;       //扫描成功 覆盖扫描二维码的view
+}
 
 @end
 
@@ -43,15 +53,29 @@
     imageView.center = CGPointMake(kX()* 4 , kY() * 4 - 60);
     [self.view addSubview:imageView];
     
-    
-    _lineView = [[UIImageView alloc] initWithFrame:CGRectMake(kX(), 110, 220, 2)];
+    // 扫描线
+    _lineView = [[UIImageView  alloc] initWithFrame:CGRectMake(kX(), 110, 220, 2)];
     _lineView.center = CGPointMake(kX() * 4, kY() * 4 - 60-150);
     _lineView.image = [UIImage imageNamed:@"line.png"];
     [self.view addSubview:_lineView];
-    
+
+    // 时间
     timer = [NSTimer scheduledTimerWithTimeInterval:.02 target:self selector:@selector(animation1) userInfo:nil repeats:YES];//动画周期
     upOrdown = NO;//初始
     num = 0; //初始
+    
+    NSString *mediaType = AVMediaTypeVideo;//AV视频媒体类型
+    // 授权状态
+    AVAuthorizationStatus  authStatus = [AVCaptureDevice authorizationStatusForMediaType:mediaType];
+    if (authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied || UIImagePickerControllerSourceTypeCamera) {
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"请到设置中开启相机权限" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        [alertView show];
+        return;
+    }
+    
+    
+    
+    
     
     
 }
